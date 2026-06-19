@@ -1,0 +1,19 @@
+🏥 Medical Record Management System
+
+A healthcare management platform designed to manage patient records, doctors, departments, and appointments.
+
+Tech Stack:
+• Node.js
+• TypeScript
+• Express.js
+• MySQL
+• JWT Authentication
+• API Communication
+• Tailwind
+• React
+
+GitHub:
+https://github.com/Jovohir009/medical-record-management-system
+
+Live Demo:
+https://medical-record-management-system.netlify.app/

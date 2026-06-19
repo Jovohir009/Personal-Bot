@@ -1,0 +1,7 @@
+Hi, I'm Bahodirov Javohir.
+
+First-year Information Technology student at PDP University with strong interests in software engineering, web development, artificial intelligence, vibe coding and digital products.
+
+I build end-to-end full stack web applications, business management systems, and AI-assisted software solutions.
+
+This bot serves as my interactive portfolio where you can explore my projects, skills, and CV.

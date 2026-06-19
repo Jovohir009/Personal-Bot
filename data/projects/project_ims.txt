@@ -1,0 +1,18 @@
+📦 Inventory Management System
+
+A multi-tenant inventory and stock management system that allows businesses to manage products, transactions, analytics, and inventory operations.
+
+Tech Stack:
+• FastAPI
+• PostgreSQL
+• JWT Authentication
+• Python
+• TypeScript
+• React
+• Tailwind
+
+GitHub:
+https://github.com/Jovohir009/Inventory-Management-System
+
+Live Demo:
+https://inventory-management-program.netlify.app/
