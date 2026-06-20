@@ -5,6 +5,7 @@ def main_menu():
     return {
         "inline_keyboard": [
             [{"text": "👨 About Me", "callback_data": "about"}],
+            [{"text": "💼 Work Experience", "callback_data": "work_experience"}],
             [{"text": "🚀 Projects", "callback_data": "projects"}],
         ]
     }
@@ -36,5 +37,29 @@ def project_back_menu():
     return {
         "inline_keyboard": [
             [{"text": "⬅ Back to Projects", "callback_data": "back_projects"}]
+        ]
+    }
+
+
+def work_menu():
+    return {
+        "inline_keyboard": [
+            [{"text": "🎨 Vertex 3D", "callback_data": "work_vertex3d"}],
+            [{"text": "🚛 Alif Uz Corp", "callback_data": "work_alifuz"}],
+            [
+                {
+                    "text": "💻 Freelance Software Engineer",
+                    "callback_data": "work_freelance",
+                }
+            ],
+            [{"text": "⬅ Back", "callback_data": "back_main"}],
+        ]
+    }
+
+
+def work_back_menu():
+    return {
+        "inline_keyboard": [
+            [{"text": "⬅ Back to Work Experience", "callback_data": "back_work"}]
         ]
     }

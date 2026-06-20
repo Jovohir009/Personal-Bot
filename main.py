@@ -17,6 +17,13 @@ from handlers.projects import (
     get_portfolio_page,
 )
 
+from handlers.work_experience import (
+    get_work_page,
+    get_vertex3d_page,
+    get_alifuz_page,
+    get_freelance_page,
+)
+
 load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
@@ -64,11 +71,32 @@ async def telegram_webhook(request: Request):
             BOT_TOKEN, "answerCallbackQuery", {"callback_query_id": callback_id}
         )
 
+        # ABOUT
+
         if callback_data == "about":
             edit_message(chat_id, message_id, get_about_page())
 
         elif callback_data == "show_cv":
             edit_message(chat_id, message_id, get_cv_page())
+
+        # WORK EXPERIENCE
+
+        elif callback_data == "work_experience":
+            edit_message(chat_id, message_id, get_work_page())
+
+        elif callback_data == "work_vertex3d":
+            edit_message(chat_id, message_id, get_vertex3d_page())
+
+        elif callback_data == "work_alifuz":
+            edit_message(chat_id, message_id, get_alifuz_page())
+
+        elif callback_data == "work_freelance":
+            edit_message(chat_id, message_id, get_freelance_page())
+
+        elif callback_data == "back_work":
+            edit_message(chat_id, message_id, get_work_page())
+
+        # PROJECTS
 
         elif callback_data == "projects":
             edit_message(chat_id, message_id, get_projects_page())
@@ -88,11 +116,13 @@ async def telegram_webhook(request: Request):
         elif callback_data == "portfolio":
             edit_message(chat_id, message_id, get_portfolio_page())
 
-        elif callback_data == "back_main":
-            edit_message(chat_id, message_id, get_main_page())
-
         elif callback_data == "back_projects":
             edit_message(chat_id, message_id, get_projects_page())
+
+        # GLOBAL BACK
+
+        elif callback_data == "back_main":
+            edit_message(chat_id, message_id, get_main_page())
 
         return {"status": "ok"}
 

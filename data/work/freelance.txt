@@ -1,0 +1,27 @@
+💻 Freelance Software Engineer & Vibe Coder
+
+Duration: Ongoing
+
+Built software projects and personal products including:
+
+• Management System
+• Booking System
+• AI-integrated applications
+• Telegram Bots
+
+Tech Stack:
+• Python
+• FastAPI
+• React
+• PostgreSQL
+• TypeScript
+• AI Development Tools
+• Tailwind
+• Excel
+• Word
+• MySql
+• Express.js
+• Node.js
+• JavaScript
+
+Focused on building practical software solutions and continuously improving engineering skills.
